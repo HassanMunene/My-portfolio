@@ -1,0 +1,63 @@
+.preloader {
+	display: block;
+	position: fixed;
+	will-change: transform;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #022c43;
+	z-index: 2;
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	transform: translate(0%, 0%) matrix(1,0,0,1,0,0);
+
+	.inner {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+		width: 400px;
+		max-width: 100%;
+		height: 160px;
+		text-align: center;
+
+		img {
+			width: 47px;
+			display: block;
+			margin: 0 auto;
+			border: 0;
+			max-width: 100%;
+		}
+		span {
+			color: #8d8d8d;
+			margin-top: 9px;
+			font-size: 9px;
+			font-family: sans-serif;
+			letter-spacing: 3px;
+			margin-bottom: 30px;
+			display: block;
+		}
+		.progress-bar {
+			text-align: left;
+
+			.progress-bar_bg {
+				height: 1px;
+				background: #047765
+			}
+		}
+	}
+}
+
+@keyframes slideOut {
+	0% {
+        transform: translate(0%, 0%) matrix(1,0,0,1,0,0);
+    }
+
+    100% {
+        transform: translate(100%, 0%) matrix(1,0,0,1,0,0);
+    }
+}
