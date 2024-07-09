@@ -1,3 +1,11 @@
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -12,4 +20,18 @@ body {
   overflow: hidden;
   display: block;
 }
+
+@media screen and (max-width: 960px) {
+  body {
+    overflow: auto;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+
 

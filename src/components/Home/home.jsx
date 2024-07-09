@@ -2,8 +2,6 @@ import './home.scss';
 import {useState} from 'react';
 import AnimatedLetters from '../AnimatedLetters/animatedLetters.jsx'
 import {Link} from 'react-router-dom';
-import Logo from './Logo/logo.jsx';
-
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
     const nameArray = ['H', 'a', 's', 's', 'a', 'n', ','];
@@ -34,7 +32,6 @@ const Home = () => {
                     &lt;/html&gt;
                 </span>
             </div>
-            <Logo />
         </>
     )
 }

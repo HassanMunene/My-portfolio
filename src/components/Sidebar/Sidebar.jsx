@@ -2,6 +2,7 @@ import './Sidebar.scss';
 import LogoS from '../../assets/images/logo-s.svg';
 import {Link, NavLink} from 'react-router-dom';
 import { RiHome2Line } from "react-icons/ri";
+
 import { FaRegUser } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
@@ -9,6 +10,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FiMenu } from "react-icons/fi";
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { GiSkills } from "react-icons/gi";
 import { GrProjects } from "react-icons/gr";
 import {useState} from 'react';
@@ -32,7 +34,7 @@ const Sidebar = () => {
                 <NavLink exact="true" to="/about" activeclassname="active" className="about-link" onClick={() => setShowNav(false)}>
                      <FaRegUser/>
                 </NavLink>
-                <NavLink exact="true" to="/contact" activeclassname="active" className="contact-link" onClick={() => setShowNav(false)}>
+                <NavLink exact="true" to="/contact-me" activeclassname="active" className="contact-link" onClick={() => setShowNav(false)}>
                     <FaEnvelope/>
                 </NavLink>
                 <NavLink exact="true" to="/skills" activeclassname="active" className="skills-link" onClick={() => setShowNav(false)}>
@@ -60,7 +62,7 @@ const Sidebar = () => {
                      </a>
                 </li>
             </ul>
-            <FiMenu onClick={toggleNavBar} className='mobile-link' />
+            <HiOutlineMenuAlt3 onClick={toggleNavBar} className='mobile-link' />
         </div>
     )
  }

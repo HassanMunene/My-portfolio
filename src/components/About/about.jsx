@@ -1,6 +1,4 @@
 import './about.scss';
-
-
 import AnimatedLetters from '../AnimatedLetters/animatedLetters.jsx'
 import {useState, useEffect} from 'react';
 import { FaReact } from "react-icons/fa";
@@ -38,7 +36,7 @@ const About = () => {
             			established IT company with the opportunity to work with the latest 
             			technologies on challenging and diverse projects.
           			</p>
-          			 <p align="LEFT">
+          			<p align="LEFT">
             			I'm quiet confident, naturally curious, and perpetually working on 
             			improving my chops one design problem at a time.
           			</p>
@@ -47,26 +45,30 @@ const About = () => {
             			and tech-obsessed!!!
           			</p>
 				</div>
-				<div className="cube-content">
-					<div id="stars"></div>
-					<div className="cube-spinner">
-						<div className="face1">
-							<FaReact/>
-						</div>
-						<div className="face2">
-							<FaHtml5/>
-						</div>
-						<div className="face3">
-							<FaCss3Alt/>
-						</div>
-						<div className="face4">
-							<IoLogoJavascript/>
-						</div>
-						<div className="face5">
-							<FaGitAlt/>
-						</div>
-						<div className="face6">
-							<RiTailwindCssFill/>
+				<div className="stage">
+					<div className="stage-cube-cont">
+						<div id="stars"></div>
+						<div id="stars2"></div>
+						<div id="stars3"></div>
+						<div className="cube-spinner">
+							<div className="face1">
+								<FaReact/>
+							</div>
+							<div className="face2">
+								<FaHtml5/>
+							</div>
+							<div className="face3">
+								<FaCss3Alt/>
+							</div>
+							<div className="face4">
+								<IoLogoJavascript/>
+							</div>
+							<div className="face5">
+								<FaGitAlt/>
+							</div>
+							<div className="face6">
+								<RiTailwindCssFill/>
+							</div>
 						</div>
 					</div>
 				</div>
